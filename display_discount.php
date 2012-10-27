@@ -4,9 +4,9 @@
 
 
 	// Get the user data from the form
-	$product_description = $_POST("product_description");
-	$list_price = $_POST("list_price");
-	$discount_percent = $_POST("discount_percent");
+	$product_description = $_POST["product_description"];
+	$list_price = $_POST["list_price"];
+	$discount_percent = $_POST["discount_percent"];
 
 	// Calculate the discount
 	$discount = $list_price * $discount_percent * 0.01;
@@ -17,12 +17,7 @@
 	$list_price_formatted = "$".number_format($list_price, 2);
 	$discount_price_formatted = "$".number_format($discount_price, 2);
 
-
 	// Output the results
-
-
-
-
 ?>
 
 
